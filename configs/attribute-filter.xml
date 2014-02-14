@@ -17,7 +17,15 @@
     <afp:AttributeFilterPolicy id="releaseTransientIdToAnyone">
         <afp:PolicyRequirementRule xsi:type="basic:ANY"/>
 
-        <afp:AttributeRule attributeID="transientId">
+        <afp:AttributeRule attributeID="storedId">
+            <afp:PermitValueRule xsi:type="basic:ANY"/>
+        </afp:AttributeRule>
+
+        <afp:AttributeRule attributeID="username">
+            <afp:PermitValueRule xsi:type="basic:ANY"/>
+        </afp:AttributeRule>
+
+        <afp:AttributeRule attributeID="email">
             <afp:PermitValueRule xsi:type="basic:ANY"/>
         </afp:AttributeRule>
 
